@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website profil pribadi mahasiswa Teknik Informatika">
+    <meta name="author" content="caca">
+    <title>Profil Pribadi - caca | Informatic engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-bg: #ffe4ef;
+            --pink-soft: #ffd1e3;
+            --pink-main: #ff8fb8;
+            --pink-deep: #e0608f;
+            --text: #6b3a50;
+            --white: #fffafc;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 24px 16px;
+            font-family: "Quicksand", "Segoe UI", Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background-color: var(--pink-bg);
+            background-image: radial-gradient(var(--pink-soft) 2px, transparent 2px);
+            background-size: 22px 22px;
+        }
+
+        header, main, footer {
+            max-width: 760px;
+            margin: 0 auto 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background: var(--white);
+            border: 3px dashed var(--pink-main);
+            border-radius: 28px;
+            padding: 28px 20px;
+            box-shadow: 0 8px 0 var(--pink-soft);
+        }
+
+        header h1 {
+            margin: 0 0 6px;
+            font-size: 2rem;
+            color: var(--pink-deep);
+        }
+
+        header h1::after { content: " ♡"; }
+
+        header p {
+            margin: 0 0 16px;
+            font-weight: 600;
+        }
+
+        header img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid var(--pink-main);
+            box-shadow: 0 0 0 6px var(--pink-soft);
+        }
+
+        /* Sections */
+        main section {
+            background: var(--white);
+            border: 2px solid var(--pink-soft);
+            border-radius: 24px;
+            padding: 18px 24px;
+            margin-bottom: 18px;
+            box-shadow: 0 6px 0 var(--pink-soft);
+            transition: transform 0.2s;
+        }
+
+        main section:hover { transform: translateY(-3px); }
+
+        main h2 {
+            margin: 0 0 10px;
+            font-size: 1.3rem;
+            color: var(--pink-deep);
+            display: inline-block;
+            background: var(--pink-bg);
+            padding: 2px 16px;
+            border-radius: 999px;
+        }
+
+        section:nth-of-type(1) h2::before { content: "🌸 "; }
+        section:nth-of-type(2) h2::before { content: "🎀 "; }
+        section:nth-of-type(3) h2::before { content: "💖 "; }
+        section:nth-of-type(4) h2::before { content: "✨ "; }
+        section:nth-of-type(5) h2::before { content: "🍓 "; }
+        section:nth-of-type(6) h2::before { content: "💌 "; }
+
+        p { margin: 0 0 10px; }
+
+        ul, ol { padding-left: 24px; margin: 6px 0; }
+        li { margin-bottom: 4px; }
+        ul li::marker { content: "♥  "; color: var(--pink-main); }
+        ol li::marker { color: var(--pink-deep); font-weight: 700; }
+
+        /* Links */
+        a {
+            color: var(--pink-deep);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px dotted var(--pink-main);
+        }
+
+        a:hover {
+            background: var(--pink-soft);
+            border-radius: 6px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: var(--pink-main);
+            color: #fff;
+            border-radius: 999px;
+            padding: 10px 20px;
+            font-weight: 600;
+        }
+
+        footer p { margin: 0; }
+
+        @media (max-width: 480px) {
+            header h1 { font-size: 1.5rem; }
+            main section { padding: 14px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hallo, My Name is Andi Salsabiila Anggraini </h1>
+        <p>Student Informatic Engineering | NIM: 25040700017</p>
+        <img src="media/profile.jpg"Foto profil Nama Kamu, mahasiswa Teknik Informatika" width="200" height="200">
+    </header>
+
+    <main>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+              Hello, my name is Andi Salsabiila Anggraini, and I am a first-semester student in the Informatics Engineering program. I have a keen interest in the world of technology, specifically in web development and programming.
+            </p>
+            <p>
+               Currently, I am learning the fundamentals of web programming, starting with HTML to build page structures. I believe that a solid foundation will make it easier for me to learn CSS, JavaScript, and other web technologies.
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Educational background</h2>
+            <ol>
+                <li>SD   (2013 - 2018)</li>
+                <li>SMP  (2019 - 2022)</li>
+                <li>SMA  (2023 - 2025)</li>
+                <li>S3 Informatic Engineering, Universitas Muhammadiyah Jakarta (2026 - Now)</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Interest</h2>
+            <ul>
+                <li>web development</li>
+                <li>Pemrograman and algoritma</li>
+                <li>UI/UX</li>
+                <li>AI</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skill <ul>
+                <li>Basic HTML
+                <li>Programming basics (variables, branching, looping)
+                <li>Microsoft Office</li>
+                <li>Using XAMPP to run a local websit
+            </ul>
+        </section>
+
+        <section>
+            <h2>Learning Objectives <ol>
+                <li>Master HTML and CSS </li>
+                <li>Learn JavaScript</li>
+                <li>Create responsive websites</li>
+                <li>Create responsive websites
+Build web applications using PHP and MySQL</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Contact</ol>
+            <p>Email: <a href="andisalsabilla3@gmail.com">andisalsabilla3@gmail.com</a></p>
+            <p>
+                Instagram:
+                <a href="@andslsblaa_">@andslsblaa_</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Andi Salsabiila Anggraini. Tugas Pemrograman Web - Pertemuan 3.</p>
+    </footer>
+
+</body>
+</html>
